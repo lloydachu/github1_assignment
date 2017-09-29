@@ -2,9 +2,30 @@
 
 1. You get hired and on your first day, you realize that the last sysadmin had reset the root password on the server before you left.......and your manager asks you to reset the root password.
      # assumption is that you don't know the root password
+
+
+-Ask my manager to send me an email asking me to reset the password, then I rese                                                                                        t the password with the command $ sudo passwd root, then enter the password twic                                                                                        e.
   
  2. what do you understand by "runlevel" and how do i find out what run level i'm on
+
+- a runlevel is an operating state on a linux operating system. and to find out                                                                                         what runlevel you are on is $ runlevel
+
+
  3. what command will show me the kernel that is installed on my machine
+
+- uname
+
  4. what command will update my entire system
+
+-sudo apt-get update && sudo apt-get dist-upgrade
+
+
  5. what command will tell me if i'm on either a physical machine or a virtual machine
+
+-dmidecode
+-dmidecode -s system-product-name
+-dmidecode | less "system information"
+
  6. write a short script to tell me todays date anytime that i run it.
+
+-date
